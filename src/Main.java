@@ -1,21 +1,12 @@
 public class Main {
     public static void main(String [] args){
-        String str = "asdfrrsg";
-        int maxChar = 0;
-        int secMaxChar = 0;
-        char secChar = '0';
-        for(int i= 0; i < str.length(); i++)
-        {
-            int ch = str.charAt(i);
+        int result = 0;
+        int num = 0;
 
-            if(maxChar < ch){
-                secMaxChar = maxChar;
-                maxChar = ch;
-            }else if(secMaxChar < ch && maxChar != ch)
-                secMaxChar = ch;
+        while(num < 1000){
+            result = result * 10 + 8;
+            num++;
         }
-
-        secChar = (char) secMaxChar;
-        System.out.println(secChar);
+        System.out.println(result);
     }
 }
